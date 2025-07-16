@@ -46,4 +46,8 @@ public class Person : IPerson
         get => _starSign;
         set => _starSign = value ?? throw new ArgumentNullException(nameof(value));
     }
+
+    public bool? ParentConsent { get; set; }
+
+    public Person? Spouse { get; set; }
 }
